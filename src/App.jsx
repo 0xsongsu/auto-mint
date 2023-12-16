@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import {
   BrowserRouter,
+  HashRouter,
   useRoutes
 } from "react-router-dom";
 import routesList from '@/router';
@@ -15,10 +16,10 @@ function App () {
     <>
 
 
-      <BrowserRouter>
+      <HashRouter>
         {/* 3. 替换之前的Routes组件 */}
         <WrapperRoutes />
-      </BrowserRouter>
+      </HashRouter>
      
     </>
   )

@@ -4,6 +4,7 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: './', // 设置打包路径
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'), // src 路径
